@@ -1,7 +1,3 @@
-//#wccchallenge - waves - I didn't spend too much time here...
-//https://fractalkitty.com/2022/04/30/creative-coding-update/
-//click to change, press key to pause
-
 /***************************************************************************************
 *    Title: Textured Current
 *    Author: Sophia (fractal kitty)
@@ -11,20 +7,23 @@
 *
 ***************************************************************************************/
 let button;
-
+// visual variables
 let t=0;
 let playB=true;
 let n=100
 let a=5;
+
 function setup(){
   createCanvas(windowWidth,windowHeight);
   background(9, 32, 41);
   noStroke()
   angleMode(DEGREES);
   
-  
+  //create button
   button = createButton("174 Hz - Pain Relief");
+  //position button
   button.position(width / 2 -60, 140);
+  //set action for button
   button.mousePressed(function goToAnotherPage() {
     window.location.href =
       "https://tashatan1.github.io/visual-one/";
@@ -34,56 +33,56 @@ function setup(){
   button.position(width / 2-120, 180);
   button.mousePressed(function goToAnotherPage() {
     window.location.href =
-      "https://editor.p5js.org/natashatan/sketches/lTylDwIsD";
+      "https://tashatan1.github.io/visual-two/";
   });
 
   button = createButton("396 Hz - Let go of Fear, Shame & Guilt");
   button.position(width / 2-120, 220);
   button.mousePressed(function goToAnotherPage() {
     window.location.href =
-      "https://editor.p5js.org/natashatan/sketches/_KLoOBCzN";
+      "https://tashatan1.github.io/visual-three/";
   });
 
   button = createButton("417 Hz - Clears Negative Energy");
   button.position(width / 2-100, 260);
   button.mousePressed(function goToAnotherPage() {
     window.location.href =
-      "https://editor.p5js.org/natashatan/sketches/Xt8qYFt1a";
+      "https://tashatan1.github.io/visual-four/";
   });
 
   button = createButton("528 Hz - Boost Positivity & Reduce Stress");
   button.position(width / 2-130, 300);
   button.mousePressed(function goToAnotherPage() {
     window.location.href =
-      "https://editor.p5js.org/natashatan/sketches/k-CVCaSDC";
+      "https://tashatan1.github.io/visual-five-/";
   });
 
   button = createButton("639 Hz - Pure Positive Love Energy");
   button.position(width / 2-110, 340);
   button.mousePressed(function goToAnotherPage() {
     window.location.href =
-      "https://editor.p5js.org/natashatan/sketches/h_e2T2qUD";
+      "https://tashatan1.github.io/visual-six/";
   });
 
   button = createButton("741 Hz - Spirutial & Emotional Detox");
   button.position(width / 2-113, 380);
   button.mousePressed(function goToAnotherPage() {
     window.location.href =
-      "https://editor.p5js.org/natashatan/sketches/U4V7OlkOf";
+      "https://tashatan1.github.io/visual-seven/";
   });
 
   button = createButton("852 Hz - Awaken your Intuition");
   button.position(width / 2-93, 420);
   button.mousePressed(function goToAnotherPage() {
     window.location.href =
-      "https://editor.p5js.org/natashatan/sketches/aQSdgJcCR";
+      "https://tashatan1.github.io/visual-eight/";
   });
 
   button = createButton("963 Hz - Connect to Divine Consciousness");
   button.position(width / 2-133, 460);
   button.mousePressed(function goToAnotherPage() {
     window.location.href =
-      "https://editor.p5js.org/natashatan/sketches/ukTQvyosH";
+      "https://tashatan1.github.io/visual-nine/";
   });
 }
 function draw(){
@@ -91,8 +90,9 @@ function draw(){
   textAlign(CENTER);
   textFont("Roboto");
   text("Which Frequency do you need?", width / 2, 100);
-  
-  h=100+second()*sin(t)//just threw some time in the soup
+ 
+  //animation for visual
+  h=100+second()*sin(t)
   fill(50+5*cos(t/5),170+150*sin(t/4),270+250*sin(t/4),10)
   if(playB){
     t+=0.1  

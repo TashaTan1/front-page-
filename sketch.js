@@ -89,7 +89,7 @@ function draw(){
   textSize(30);
   textAlign(CENTER);
   textFont("Roboto");
-  text("Which Frequency do you need?", width / 2, 100);
+  text("Which Frequency do you need?", width / 2, 300);
  
   //animation for visual
   h=100+second()*sin(t)
